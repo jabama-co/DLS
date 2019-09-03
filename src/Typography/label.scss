@@ -1,0 +1,6 @@
+@import '../style/_vars';
+
+.#{$prefix}-label {
+    color: $color-shuttle-gray;
+    font-size: 10px;
+}

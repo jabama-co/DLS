@@ -1,0 +1,41 @@
+@import '../style/_vars';
+
+@mixin header {
+    color: $color-shuttle-gray;
+}
+
+.#{$prefix}-h1 {
+    @include header;
+    font-size: 32px;
+    @media screen and (max-width: $mobile-max-width) {
+        font-size: 18px;
+    }
+}
+
+.#{$prefix}-h2 {
+    @include header;
+    font-size: 28px;
+    @media screen and (max-width: $mobile-max-width) {
+        font-size: 16px;
+    }
+}
+
+.#{$prefix}-h3 {
+    @include header;
+    font-size: 24px;
+}
+
+.#{$prefix}-h4 {
+    @include header;
+    font-size: 22px;
+}
+
+.#{$prefix}-h5 {
+    @include header;
+    font-size: 20px;
+}
+
+.#{$prefix}-h6 {
+    @include header;
+    font-size: 18px;
+}

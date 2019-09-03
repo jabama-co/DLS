@@ -1,0 +1,26 @@
+@import '../style/_vars';
+
+@mixin body-paragraph {
+    color: $color-shuttle-gray;
+}
+
+.#{$prefix}-b1 {
+    @include body-paragraph;
+    font-size: 16px;
+    @media screen and (max-width: $mobile-max-width) {
+        font-size: 14px;
+    }
+}
+
+.#{$prefix}-b2 {
+    @include body-paragraph;
+    font-size: 14px;
+    @media screen and (max-width: $mobile-max-width) {
+        font-size: 12px;
+    }
+}
+
+.#{$prefix}-b3 {
+    @include body-paragraph;
+    font-size: 12px;
+}
