@@ -1,0 +1,25 @@
+@import './_vars';
+
+$color-groups: (
+    primary: $primary, 
+    secondary: $secondary, 
+    blue: $blue,
+    red: $red,
+    coal: $coal, 
+    ash: $ash,
+    gray: $gray
+);
+
+@each $name, $color-group in $color-groups {
+    @each $lvl, $color in $color-group {
+        @if $lvl == 500 {
+            .color-#{$name} {
+                color: $color;
+            }
+        } @else {
+            .color-#{$name}-#{$lvl} {
+                color: $color;
+            }
+        }
+    }
+}
