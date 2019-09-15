@@ -1,5 +1,5 @@
 {
-  "name": "jabama-dls",
+  "name": "@jabama/dls",
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -27,5 +27,6 @@
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "homepage": "https://github.com/jabama-co/dls"
 }
